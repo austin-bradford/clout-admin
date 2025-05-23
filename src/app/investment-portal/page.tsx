@@ -18,6 +18,7 @@ var base = baseId
 export default function Home() {
   const [totalCommitments, setTotalCommitments] = React.useState<number>(0);
 
+  //fetching the commitments from airtable
   const fetchCommitments = async () => {
     if (!base) return;
     try {
